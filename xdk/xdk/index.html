@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+    <link rel="stylesheet" type="text/css" href="galleria/galleria.classic.css">
+    <link rel="stylesheet" type="text/css" href="icon-fonts/font-awesome-4.3.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="icon-fonts/elusive-icons-2.0.0/css/elusive-icons.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+    <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <script src="intelxdk.js"></script>
+    <script src="cordova.js"></script>
+    <script src="xhr.js"></script>
+    <script src="xdk/init-dev.js"></script>
+    <script type="application/javascript" src="lib/jquery.min.js"></script>
+    <script type="application/javascript" src="js/index_user_scripts.js"></script>
+    <script type="application/javascript" src="galleria/galleria-1.3.6.min.js"></script>
+    <script type="application/javascript" src="galleria/galleria.classic.min.js"></script>
+    <script type="application/javascript" src="galleria/galleria-startup.js"></script>
+    <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>
+    <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+  </head>
+
+  <body>
+    <div class="upage vertical-col left" id="mainpage">
+
+      <div class="tarea widget uib_w_4 d-margins style-87" data-uib="media/text" data-ver="0" name="uib_w_4">
+        <div class="widget-container left-receptacle"></div>
+        <div class="widget-container right-receptacle"></div>
+        <div class="text-container">
+          <p><strong>Sobre Vinhos</strong>
+          </p>
+        </div>
+      </div>
+      <div class="widget uib_w_5 scale-image d-margins style-72 style-97" data-uib="media/img" data-ver="0">
+        <figure class="figure-align">
+          <img src="images/vinho2.jpg" id="imgVinho">
+
+          <figcaption data-position="bottom"></figcaption>
+        </figure>
+      </div>
+      <div class="table-thing widget uib_w_6 d-margins" data-uib="twitter%20bootstrap/text_area" data-ver="1">
+        <label class="narrow-control"></label>
+        <textarea rows="1" class="wide-control form-control" wrap="soft" placeholder="Login"></textarea>
+      </div>
+      <div class="table-thing widget uib_w_7 d-margins" data-uib="twitter%20bootstrap/text_area" data-ver="1">
+        <label class="narrow-control label-inline"></label>
+        <textarea rows="1" class="wide-control form-control" wrap="soft" placeholder="Senha"></textarea>
+      </div>
+      <button class="btn widget uib_w_8 d-margins ClassBtnVinho btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnEntrar">Entrar</button>
+    </div>
+    <div class="upage vertical-col left hidden" id="page06">
+      <div class="tarea widget uib_w_4 d-margins style-87" data-uib="media/text" data-ver="0" name="uib_w_4">
+        <div class="widget-container left-receptacle"></div>
+        <div class="widget-container right-receptacle"></div>
+        <div class="text-container">
+          <p><strong>Contato</strong>
+          </p>
+        </div>
+      </div>
+      <div class="tarea widget uib_w_19 d-margins" data-uib="media/text" data-ver="0" name="uib_w_19">
+        <div class="widget-container left-receptacle"></div>
+        <div class="widget-container right-receptacle"></div>
+        <div class="text-container">
+          <p><strong>Preencha os campos abaixo e aguarde nosso retorno!</strong>
+          </p>
+        </div>
+      </div>
+      <div class="table-thing widget uib_w_20 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+        <label class="narrow-control label-inline">Nome</label>
+        <input class="wide-control form-control default" type="text" placeholder="nome completo">
+      </div>
+      <div class="table-thing widget uib_w_21 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+        <label class="narrow-control label-inline">E-mail</label>
+        <input class="wide-control form-control default" type="text" placeholder="e-mail">
+      </div>
+      <fieldset class="widget uib_w_22 d-margins" data-uib="twitter%20bootstrap/radio_group" data-ver="1" data-child-name="bs-radio-group-0">
+        <label class="radio radio-padding-left widget uib_w_23" data-uib="twitter%20bootstrap/radio_button" data-ver="1">
+          <input type="radio" name="bs-radio-group-0">Feminino</label>
+        <label class="radio radio-padding-left widget uib_w_24" data-uib="twitter%20bootstrap/radio_button" data-ver="1">
+          <input type="radio" name="bs-radio-group-0">Masculino</label>
+      </fieldset>
+      <div class="table-thing widget uib_w_25 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+        <label class="narrow-control label-inline">Endereço</label>
+        <input class="wide-control form-control default" type="text" placeholder="endereço">
+      </div>
+      <div class="table-thing widget uib_w_26 d-margins" data-uib="twitter%20bootstrap/text_area" data-ver="1">
+        <label class="narrow-control label-inline">Observação</label>
+        <textarea rows="2" class="wide-control form-control" wrap="soft" placeholder="deixe seu comentário aqui..."></textarea>
+      </div>
+      <button class="btn widget uib_w_8 d-margins ClassBtnVinho btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnEntrar">Enviar</button>
+      <input type="button" value="Voltar" onclick="history.go(-1)">
+    </div>
+    <div class="upage vertical-col left hidden" id="page05">
+      <div class="tarea widget uib_w_4 d-margins style-87" data-uib="media/text" data-ver="0" name="uib_w_4">
+        <div class="widget-container left-receptacle"></div>
+        <div class="widget-container right-receptacle"></div>
+        <div class="text-container">
+          <p><strong>Palestras</strong>
+          </p>
+        </div>
+      </div>
+      <div class="embed-video widget uib_w_17 d-margins" data-uib="media/youtube" data-ver="0">
+        <iframe src="http://www.youtube.com/embed/92y10oteHGE?wmode=transparent">
+        </iframe>
+      </div>
+      <div class="tarea widget uib_w_18 d-margins" data-uib="media/text" data-ver="0" name="uib_w_18">
+        <div class="widget-container left-receptacle"></div>
+        <div class="widget-container right-receptacle"></div>
+        <div class="text-container">
+          <p><strong>Assista nosso vídeo e acompanhe toda semana mais uma novidade!</strong>
+          </p>
+        </div>
+      </div>
+      <input type="button" value="Voltar" onclick="history.go(-1)">
+    </div>
+    <div class="upage vertical-col left hidden" id="page04">
+      <div class="tarea widget uib_w_4 d-margins style-87" data-uib="media/text" data-ver="0" name="uib_w_4">
+        <div class="widget-container left-receptacle"></div>
+        <div class="widget-container right-receptacle"></div>
+        <div class="text-container">
+          <p><strong>Cursos</strong>
+          </p>
+        </div>
+      </div>
+      <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_15 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+      href="http://ww.sp.senac.br">
+        <img src="images/cachos2.jpg">
+        <span class="uib-caption">Curso Livre Sobre Vinhos</span>
+      </a>
+      <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_16 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+      href="https://www.abs-sp.com.br">
+        <img src="images/cachos2.jpg">
+        <span class="uib-caption">Curso Sobre Degustação</span>
+      </a>
+      <input type="button" value="Voltar" onclick="history.go(-1)">
+    </div>
+    <div class="upage vertical-col left hidden" id="page03">
+      <div class="tarea widget uib_w_4 d-margins style-87" data-uib="media/text" data-ver="0" name="uib_w_4">
+        <div class="widget-container left-receptacle"></div>
+        <div class="widget-container right-receptacle"></div>
+        <div class="text-container">
+          <p><strong>Quem Somos</strong>
+          </p>
+        </div>
+      </div>
+      <div class="galleria image-gallery-size widget uib_w_13 d-margins" data-uib="media/image_gallery" data-ver="0" data-sm-trigger="true" images-json="gallery_images/gallery_images.json">
+      </div>
+      <div class="tarea widget uib_w_14 d-margins" data-uib="media/text" data-ver="0" name="uib_w_14">
+        <div class="widget-container left-receptacle"></div>
+        <div class="widget-container right-receptacle"></div>
+        <div class="text-container">
+          <p><cite>A Sobre Vinho foi fundada em 1959 na cidade de São Roque por imigrantes italianos que vieram para o Brasil. Atualmente o estabelecimento é um dos mais renomados da cidade, por toda a sua tradição e vasta experiência em todo o cenário vinicultor nacional. Os nossos vinhos não são apenas comercialidos, mas sim são fabricados por nós mesmos, além de comerciantes somos os produtores de toda essa tradição.</cite>
+          </p>
+        </div>
+      </div>
+      <input type="button" value="Voltar" onclick="history.go(-1)">
+    </div>
+    <div class="upage hidden" id="page02">
+      <div class="upage-outer">
+        <div class="upage-content ac0 content-area vertical-col left" id="page_41_19">
+          <div class="tarea widget uib_w_4 d-margins style-87" data-uib="media/text" data-ver="0" name="uib_w_4">
+            <div class="widget-container left-receptacle"></div>
+            <div class="widget-container right-receptacle"></div>
+            <div class="text-container">
+              <p><strong>Menu</strong>
+              </p>
+            </div>
+          </div>
+          <button class="btn widget uib_w_8 d-margins style-97 btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnEQuemSomos">Quem Somos</button>
+          <button class="btn widget uib_w_8 d-margins style-97 btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnCursos">Cursos</button>
+          <button class="btn widget uib_w_8 d-margins style-97 btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnPalestras">Palestras</button>
+          <button class="btn widget uib_w_8 d-margins style-97 btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnContato">Contato</button>
+            <input type="button" value="Sair" onclick="history.go(-1)">
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
